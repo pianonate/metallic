@@ -96,7 +96,7 @@ gui.add(material, 'transparent')
 gui.add(material, 'opacity').min(.2).max(1).step(0.0001)
 
 gui.add(material, 'wireframe')
-gui.add(material, 'flatShading')
+//gui.add(material, 'flatShading')
 
 
 const sphere = new THREE.Mesh(
@@ -125,7 +125,7 @@ scene.add(sphere, plane, torus)
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
 scene.add(ambientLight)
 
-gui.add(ambientLight, 'intensity').min(0).max(1).step(0.0001).name('ambient light intensity')
+//gui.add(ambientLight, 'intensity').min(0).max(1).step(0.0001).name('ambient light intensity')
 
 const pointLight = new THREE.PointLight(0xffffff, 0.1)
 pointLight.position.x = 2
