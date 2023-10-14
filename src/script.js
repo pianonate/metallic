@@ -17,27 +17,27 @@ const cubeTextureLoader = new THREE.CubeTextureLoader
  * textures
  */
 const textureLoader = new THREE.TextureLoader()
-const doorColorTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/color.jpg`)
-const doorAlphaTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/alpha.jpg`)
-const doorAmbientOcclusionTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/ambientOcclusion.jpg`)
-const doorHeightTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/height.jpg`)
-const doorNormalTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/normal.jpg`)
-const doorMetalnessTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/metalness.jpg`)
-const doorRoughnessTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/door/roughness.jpg`)
+const doorColorTexture = textureLoader.load('./textures/door/color.jpg')
+const doorAlphaTexture = textureLoader.load('./textures/door/alpha.jpg')
+const doorAmbientOcclusionTexture = textureLoader.load('./textures/door/ambientOcclusion.jpg')
+const doorHeightTexture = textureLoader.load('./textures/door/height.jpg')
+const doorNormalTexture = textureLoader.load('./textures/door/normal.jpg')
+const doorMetalnessTexture = textureLoader.load('./textures/door/metalness.jpg')
+const doorRoughnessTexture = textureLoader.load('./textures/door/roughness.jpg')
 
-const matcapTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/matcaps/3.png`)
-const gradientTexture = textureLoader.load(`${import.meta.env.BASE_URL}/textures/gradients/5.jpg`)
+const matcapTexture = textureLoader.load('./textures/matcaps/3.png')
+const gradientTexture = textureLoader.load('./textures/gradients/5.jpg')
 gradientTexture.minFilter = THREE.NearestFilter
 gradientTexture.magFilter = THREE.NearestFilter
 gradientTexture.generateMipmaps = false
 
 const environmentMapTexture = cubeTextureLoader.load([
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/px.jpg`,
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/nx.jpg`,
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/py.jpg`,
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/nx.jpg`,
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/pz.jpg`,
-    `${import.meta.env.BASE_URL}/textures/environmentMaps/3/nx.jpg`,
+    './textures/environmentMaps/3/px.jpg',
+    './textures/environmentMaps/3/nx.jpg',
+    './textures/environmentMaps/3/py.jpg',
+    './textures/environmentMaps/3/nx.jpg',
+    './textures/environmentMaps/3/pz.jpg',
+    './textures/environmentMaps/3/nx.jpg',
 ])
 
 
