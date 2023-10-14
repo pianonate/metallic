@@ -1,5 +1,0 @@
-{
-  "routes": [
-    { "src": "^/metallic/(.*)", "dest": "/$1" }
-  ]
-}
